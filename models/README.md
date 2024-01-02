@@ -1,1 +1,2 @@
 Trained and serialized models, model predictions, or model summaries.
+## In disem Verzeichnis sollten unsere Modelle (Lineare Regression & Logistische Regression), sowie die Zusammenfassungen der Modelle.
