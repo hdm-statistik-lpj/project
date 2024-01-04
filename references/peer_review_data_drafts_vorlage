@@ -1,0 +1,48 @@
+### Peer review team
+
+- Peer review by: \[Gruppe G]
+- Names of team members that participated in this review: \[Lena Breitberg, Paraskevas Papadopoulos, Huixiao Ji]
+
+### Goal of the project
+
+- Das Ziel des Projekts solle darin bestehen, die Beziehung zwischen der städtischen Ausstattung von Nürnberg und den Immobilienpreisen in der Region konkret zu untersuchen und zu beschreiben. Hierbei sollen mithilfe von explorativen Daten-Analyse und Regression-Modellen Erkenntnisse darüber gewonnen werden, wie bestimmte Merkmale und Infrastrukturkomponenten (Variable) der Stadt Nürnberg einen Einfluss auf die Preise von Immobilien haben.
+
+### Data
+
+- Describe the data used or collected, if any. Is the data adequate for the project?
+- Die Grundlage dieses Projekts wurde mittels Web Scraping-Techniken von einer Immowelt-Website erstellt. Der resultierende Dataset umfasst zahlreiche Merkmale von Immobilienobjekten in Nürnberg, sowohl für existierende Bestandsimmobilien als auch für laufende Neubauprojekte. Durch diese Methode wurde eine umfangreiche csv-Datei erzeugt, die eine Vielzahl von kategorischen und numerischen Variablen der Immobilienobjekte in Nürnberg enthält. Diese Datei solle die Grundlage für die weiterführende Datenaufbereitung und die fortgeschrittene Analyse bilden.
+- Aufgrund der fehlenden Auffindbarkeit des Datensatzes im Projekt-Verzeichnis, ist es uns leider nicht möglich, die Originaldatenquelle und das verarbeitete Dataframe detailliert zu überprüfen. Daher wird die Datenquelle auf Grundlage des Projekt-Proposals geprüft und beschrieben, die insgesamt 961 Immobilienobjekte und 49 Variablen umfasst. Die Eignung der Datenquelle für das Projekt müsste anhand der Anforderungen des Projekts überprüft werden.
+- Die Quelldaten enthalten mehr als 500 Objekte und mindestens 10 Spalten, wobei wenigstens 6 davon eindeutige unabhängige Variablen repräsentieren, darunter beispielsweise "bildung_type", "condition", "energy_type", "rooms", "parking_slot", "heating" und "price". Diese Variablen bilden eine Mischung aus numerischen und kategorischen Werten. Da die Daten zum Zeitpunkt des Web Scrapings generiert wurden, beziehen sich alle importierten Objekte auf denselben Zeitpunkt. Daher kann gewährleistet werden, dass alle Objekte unabhängig voneinander sind. In Anbetracht dieser Aspekte lässt sich feststellen, dass die Quelldaten die Anforderungen des Projekts erfüllen und somit für die Analyse geeignet sind.
+-
+
+### Approach, tools and methods
+
+- Describe the approaches, tools, and methods that will be used.
+- Es wird zunächst festgelegt, dass die Variable 'price' als die abhängige Variable, auch als Response-Variable bezeichnet, betrachtet werden solle. Aufgrund der numerischen Eigenschaft von 'price' solle in diesem Zusammenhang die Verwendung einer linearen Regression in Betracht gezogen werden.
+- Als Nächstes solle Visualisierung und Zusammenfassungsstatistiken (EDA) für die abhängige Variable vorgenommen werden. Dazu zählen z.B. 
+1. Generierung eines Histogramms für 'price', um die Verteilung der Immobilienpreise zu visualisieren und erste Einblicke in die Form der Verteilung zu erhalten. 
+2. Berechnung von Kennzahlen wie dem Durchschnitt (Mittelwert) und dem Median, um zentrale Tendenzmaße zu verstehen.
+3. Identifikation von Ausreißern durch die Analyse von Boxplots oder ähnlichen Darstellungen.
+4. Erstellung von Streudiagrammen zwischen 'price' und anderen potenziell relevanten Variablen, um Muster oder Beziehungen zu erkennen.
+5. Berechnung von Korrelationskoeffizienten, um die Stärke und Richtung von linearen Beziehungen zwischen 'price' und anderen Variablen zu bewerten.
+- Nach der ausführlichen Betrachtung der abhängigen Variable 'price' ist es entscheidend, die potenziellen Prädiktoren zu identifizieren, die in die Analyse einbezogen werden sollen.
+
+### Lack of clarity
+
+- Is there anything that is unclear from the proposal? 
+
+### Possible improvements
+
+- Provide constructive feedback on how the team might be able to improve their project.Make sure your feedback includes at least one comment on the modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.
+
+### Presentation
+
+- What aspect of this project are you most interested in and would like to see highlighted in the final presentation?
+
+### Organization
+
+- Provide constructive feedback on any issues with file and/or code organization.
+
+### Further comments
+
+- (Optional) Any further comments or feedback?
