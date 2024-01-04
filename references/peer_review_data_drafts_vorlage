@@ -18,8 +18,19 @@ In der Klassifikationsanalyse soll darauf abzielen, Glückswerte für Deutsche v
 ### Data
 
 - Describe the data used or collected, if any. Is the data adequate for the project?
+Die Quelldaten dieses Projekts wurden aus dem European Social Survey (ESS)-Institut bezogen, dessen Datensatz unter der folgenden Quelle verfügbar ist: 
+https://ess.sikt.no/en/study/5296236e-b5ee-40dc-a554-81ea09211d1d/118 European Social Survey (ESS) - Studie. 
 
--
+Die Datenerhebung erfolgte durch persönliche Interviews mittels der Face-to-face-Methode, bei der Computer-unterstützende Technologien wie Laptops, Tablets, Smartphones usw. verwendet wurden. In diesem Kontext interagierten die Interviewer mit den Befragten und erfassten die Antworten bzw. Daten mithilfe der genannten Technologien. Die Datensammlung wurde vom Infas Institute for Applied Social Sciences durchgeführt.
+
+Die Eignung der Datenquelle für das Projekt müsste anhand der Anforderungen des Projekts überprüft werden.
+
+Die Quelldaten für dieses Projekt umfassen insgesamt 52.458 Objekte und 674 Spalten. Unter diesen Spalten befinden sich mindestens 6 eindeutige unabhängige Variablen, darunter beispielhaft "grspaya" (Brutto-Gehalt in Euro), "happy" (Grad der Lebenszufriedenheit), "tvtot" (durchschnittliche Fernsehzeit), usw. Diese Variablen repräsentieren eine Vielzahl von Daten, die sowohl numerische als auch kategoriale Werte einschließen.
+
+Es ist wichtig zu betonen, dass mindestens 6 der identifizierten Variablen als eindeutige unabhängige Variablen fungieren. Insbesondere werden relevante Aspekte wie das Brutto-Gehalt, die der Response-Variable dienen soll, die Lebenszufriedenheit und die durchschnittliche Fernsehzeit als mögliche Einflussfaktoren für das Projekt betrachtet.
+
+Da die Datenerfassung zum Zeitpunkt der persönlichen Interviews erfolgte, kann davon ausgegangen werden, dass alle Objekte (Interviewpartner) unabhängig voneinander sind. Unter Berücksichtigung dieser Aspekte lässt sich folgern, dass die Quelldaten den Anforderungen des Projekts genügen und daher für die geplante Analyse geeignet sind.
+
 
 ### Approach, tools and methods
 
