@@ -4,7 +4,15 @@
 - Names of team members that participated in this review: \[Lena Breitberg, Paraskevas Papadopoulos, Huixiao Ji]
 
 ### Goal of the project
+Das Ziel dieses Projekts besteht darin, durch die umfassende Analyse des European Social Survey (ESS) ein vertieftes Verständnis für die Lebensrealitäten in Deutschland zu gewinnen. Hierbei kommen fortgeschrittene Datenanalysetechniken, insbesondere Regressions- und Klassifikationsanalysen, zum Einsatz. Die folgenden spezifischen Ziele stehen im Fokus:
 
+- Lineare Regression 
+
+Das Ziel dieser Regressionsanalyse soll darin bestehen, Zusammenhänge zwischen dem Bruttolohn einer Person und verschiedenen Prädiktorvariablen aus den Bereichen Soziales, Politik und Wirtschaft zu identifizieren. Das Regressionsmodell soll danach streben, den Bruttolohn vorherzusagen und soll somit umfassende Einblicke in die komplexen Verflechtungen zwischen persönlichen Präferenzen, politischen Ausrichtungen und wirtschaftlichen Bedingungen bieten. 
+
+- Logistische Regression 
+
+In der Klassifikationsanalyse soll darauf abzielen, Glückswerte für Deutsche vorherzusagen, basierend auf einer Vielzahl von Prädiktoren. Von sozialen und wirtschaftlichen Faktoren bis zu individuellen Einstellungen und Überzeugungen wurden Methoden der Klassifikationsanalyse verwendet, um diejenigen Variablen zu identifizieren, die das individuelle Glück beeinflussen. Diese Analyse soll Licht auf die differenzierten Faktoren werfen, die das Wohlbefinden beeinflussen, und versuchen, einen umfassenden "Code zum Glücklichsein" zu entschlüsseln. Durch die Anwendung von Klassifikationstechniken soll es nicht nur prognostiziert werden, wie unterschiedliche Faktoren das Glück beeinflussen, sondern auch ihre relative Bedeutung quantifizieren und interpretieren.
 
 
 ### Data
