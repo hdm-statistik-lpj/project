@@ -1,0 +1,42 @@
+### Peer review team
+
+- Peer review by: \[Gruppe G]
+- Names of team members that participated in this review: \[Lena Breitberg, Paraskevas Papadopoulos, Huixiao Ji]
+
+### Goal of the project
+Ziel des Projektes ist es, herauszufinden wie soziale, politische und ökonomische Faktoren die individuelle Lebensqualität und finanzielle Stabilität beeinflussen. Ein besseres Verständnis dieser Zusammenhänge soll dazu beitragen evidenzbasierte politische Entscheidungen zu treffen.
+
+### Data
+
+- Describe the data used or collected, if any. Is the data adequate for the project?
+Die Quelldaten dieses Projekts wurden aus dem European Social Survey (ESS)-Institut bezogen. Die Datensammlung wurde durch einen externen Dienstleister durchgeführt. Das Erhebungsverfahren und die Datenerfassung sind standardisiert. Jede Beobachtung representiert eine Person. In der Analyse werden nur Datensätze von Personen mit Wohnsitz in Deutschland berücksichtigt.  
+
+Die Datenbank enthält Beobachtungen zu über 50.000 Personen mit über 600 Variablen. Die Variablen enthalten Informationen zu soziale, politische und ökonomische Faktoren. Der Datensatz ist somit geeignet um die aufgestellten Forschungsfragen zu beantworten.
+
+Soweit mir bekannt ist durchlaufen die Daten des ESS eine Plausibilitäts- und eine Konsistenzprüfung. Zudem findet eine Gewichtung statt, um Repräsentativität der Bevölkerung sicherzustellen. Diese Korrekturen werden noch vor Veröffentlichung durchgeführt. (würde ich vollständigkeitshalber erwähnen)
+
+
+### Approach, tools and methods
+
+- Describe the approaches, tools, and methods that will be used.
+
+
+### Lack of clarity
+
+- Is there anything that is unclear from the proposal? 
+
+### Possible improvements
+
+- Provide constructive feedback on how the team might be able to improve their project.Make sure your feedback includes at least one comment on the modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.
+
+### Presentation
+
+- What aspect of this project are you most interested in and would like to see highlighted in the final presentation?
+
+### Organization
+
+- Provide constructive feedback on any issues with file and/or code organization.
+
+### Further comments
+
+- (Optional) Any further comments or feedback?
