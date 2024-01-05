@@ -51,17 +51,19 @@ Logistische Regression:
 Lineare Regression: 
 - Verteilung der abhängigen Variable untersuchen. Evtl. könnte eine Standardisierung der abhängigen Variable helfen die Beziehung zu den unabhängigen Variablen zu linearisieren. (leider sind nicht alle Grafiken sichtbar evtl. liegt schon die Analyse vor)
 
+- Welche Auswirkungen hatten die ausgewählten Methoden im Umgang mit fehlenden Werten auf die Assumptions der Modelle. Ist der Datensatz durch diese Bearbeitungsschritte immer noch representativ?
 
-- Literature Review: Interessant wäre es auch eine Zusammenfassung über Methoden und verwendete Variablen andere Forscher und deren Ergebnisse zu geben.
+- Literature Review: Interessant wäre es auch eine Zusammenfassung über Methoden und verwendete Variablen anderer Forscher und deren Ergebnisse aufzuzeigen.
 
 - Die aufgestellten Hypothesen sind noch nicht vollständig beantwortet.
 
 ### Presentation
 
-- Warum wurden gerade Daten aus dem European Social Survey gewählt? 
-- Bei über 600 Variablen, wäre der Auswahlprozess der Variablen interessant. 
+- Angesichts von über 600 Variablen wäre es interessant, den Auswahlprozess der Variablen zu erläutern. Eine Definition der ausgewählten Variablen mit den entsprechenden Datentypen wäre hilfreich, um die interessante EDA vorzustellen.
+- Lasso-Regression wurde im Rahmen dieses Moduls nicht behandelt. Eine kurze Einführung wäre hilfreich, um sicherzustellen, dass alle Teilnehmer dem folgen können.
+- Logistische Regression: Erklärung des Mehrwerts durch das Upsampling.
 - Interpretation der Ergebnisse im Hinblick auf die ursprünglichen Forschungsfragen.
-- Welche Empfehlungen würdet Ihr für politische Entscheidungsträger ableiten.
+(- Welche Empfehlungen würdet Ihr für politische Entscheidungsträger ableiten.)
 
 ### Organization
 
