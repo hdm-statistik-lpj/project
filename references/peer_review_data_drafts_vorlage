@@ -39,11 +39,29 @@ Da die Datenerfassung zum Zeitpunkt der persönlichen Interviews erfolgte, kann 
 
 ### Lack of clarity
 
-- Is there anything that is unclear from the proposal? 
+- Im Abschnitt des Data Dictionaries bestehen Unklarheiten bezüglich der Definition der Variablentypen. Falls die Antworten der Interviewteilnehmer als Skalarwerte erfasst wurden, wäre es angebracht, diese als kategorische Variablen zu interpretieren. Im Falle von frei eingegebenen numerischen Antworten der Interviewer sollte jedoch eher von nummerischen Variablen ausgegangen werden.
+
+Nehmen wir zum Beispiel die Variable 'emplnof', die die Anzahl der Mitarbeiter repräsentiert, die der Vater hat. Aufgrund des Datenformats (int) und der inhaltlichen Bedeutung könnte zunächst vermutet werden, dass es sich um eine numerische Variable handelt. Jedoch besteht die Möglichkeit, dass die Antwort auf einer Skala von 1 bis 10 basiert, was zu einer Definition als kategoriale Variable im Projekt führen würde.
+
+Ein weiteres Beispiel ist die Variable 'tvtot', welche die durchschnittliche Fernsehzeit bedeutet. Im Proposal steht ein Datensatz mit der Zahl 5, wobei man leicht davon ausgehen könnte, dass es sich um 5 Stunden pro Tag/Woche handelt, was als nummerische Variable behandelt werden kann. Allerdings könnte es auch ein Skalarwert sein, der dann als kategoriale ordinale Variable angesehen werden darf.
+
+- Die Vorfilterung der Quelldaten auf 25 Variablen gemäß dem Projekt-Proposal ist sinnvoll, um die Relevanz für die Projektziele zu gewährleisten. Dennoch fehlt eine ausführliche Begründung für die Auswahl, insbesondere hinsichtlich der Kriterien, warum bestimmte Variablen für Klassifikation und andere für lineare Regression geeignet sind.
+
+- Kategorisierung der unabhängigen Variable: Glückllichswerte.
+Da es insgesamt 11 (0 - 10) gültige Ausprägungen in dieser Variable gibt – also eine ungerade Anzahl –, wobei 0 extreme Unglücklichkeit repräsentiert, während 10 extreme Glücklichkeit bedeutet, stellt sich die Frage, welche Ausprägungen als "glücklich" und welche als "unglücklich" betrachtet werden sollen. Da es keine klare Grenze gibt, an der sowohl rechts als auch links eine gleiche Anzahl von Ausprägungen vorliegt, bedarf es einer klaren Definition, um Klarheit bei der Interpretation zu schaffen. 
+Konkret stellt sich die Frage, wie mit dem Wert 5 umgegangen werden soll. Soll er als "glücklich", "unglücklich" oder weder das eine noch das andere betrachtet werden? Falls die Antwort "weder glücklich noch unglücklich" also neutral, wie in DataDrafts behandelt wurde, könnte es sinnvoll sein, Datensätze mit dem Wert 5 auszufiltern, da sie nicht eindeutig der Gruppe "glücklich" oder "unglücklich" zugeordnet werden können.
+
+
 
 ### Possible improvements
 
-- Provide constructive feedback on how the team might be able to improve their project.Make sure your feedback includes at least one comment on the modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.
+- Um Unklarheiten bei der Definition der Variablentypen zu klären, wäre es hilfreich, eine genaue Untersuchung der Formulierung und Antwortoptionen im Interview-Formular durchzuführen. Dies ermöglicht eine präzisere Definition der Variablentypen, indem man die zugrundeliegenden Formulierungen und Antwortoptionen genauer betrachtet.
+Es ist wichtig, nicht nur die Rohdaten zu berücksichtigen, sondern auch die Struktur der Antwortmöglichkeiten. Daher wird vorgeschlagen, neben den Quelldaten auch die Ausgestaltung der Antwortmöglichkeiten eingehend zu analysieren. Dieser Ansatz trägt dazu bei, die Grundlage für die Variablendefinition zu vertiefen und eine solide Basis für die weitere Analyse zu schaffen.
+- Hinsichtlich der Unsicherheiten bei der Variablenauswahl für unterschiedliche Modelle könnte eine reflektierende Betrachtung dieser Entscheidungen dazu beitragen, die Transparenz und Verständlichkeit des Auswahlprozesses zu verbessern. Es wäre wertvoll, die Überlegungen und Herausforderungen bei der Auswahl zu unterstreichen, um mögliche Schwächen aufzudecken und anzugehen.
+
+
+
+
 
 ### Presentation
 
