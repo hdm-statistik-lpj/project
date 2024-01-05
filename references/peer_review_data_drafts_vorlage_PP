@@ -17,40 +17,58 @@ Soweit mir bekannt ist durchlaufen die Daten des ESS eine Plausibilitäts- und e
 
 
 ### Approach, tools and methods
+Allgemein:
+- Kombination qualititativer und quatitativer Forschung
 
-- Describe the approaches, tools, and methods that will be used.
+Forschungsmethoden:
+- Anlehunung an bestehender Literatur zur Formulierung der Hypothesen
+- Statistische Analysemethoden: Regressionsanalyse mit dem Ziel das Bruttoeinkommen (grspaya) vorherzusagen; Klassifikationsanalyse mit dem Ziel Happiness-Score vorherzusagen
+- Lineare Regression (Vorwärtsauswahl): Zeigte eine schlechte Leistung mit hohem MSE, RMSE und niedrigem R²-Wert. Lasso Regression als Alternative angewand - half bei der Variablenselektion -, jedoch Leistungsmetriken vergleichbar mit lienaren Modell.
+- Logistische Regression: Schwellenwertanpassung zur Optimierung des Gleichgewichts zwischen Präzision und Recall; Oversampling im Umgang mit ungleichgewichtigem Datensatz, um Verbesserung der Modelleistung zu erzielen
 
+Datenaufbereitung: 
+- Auswahl relevanter Variablen: Verwendung des VIF zur Identifizierung von Multikollinearität. Auswahl von Variablen mit weniger Multikollinearität. Auswahl der Variablen auf der EDA.
+- Datenfilterung (Personen mit Wohnsitz in Deutschland)
+- Umgang mit fehlenden Werten: Entfernung von Variablen mit hohem Anteil fehlender Werte, verbleibende Variablen mit fehlenden Werte werden mit dem Median (für ordinale Variablen) oder Modus (für nominale Variablen) ersetzt.
+- Erkennung und Entfernung von Ausreißern mittels IQR und Z-Score Methoden.
 
 ### Lack of clarity
 
-- Die Hypothesen/ Eure Erwartungen sind nicht klar formuliert. Z.B: Media Impact (H1): The level of media engagement, including personal internet use and TV watching, significantly correlates with an individual's gross-pay in Germany.  Erwartet ihr hier eine lineare positive bzw. negative Beziehung? Je mehr Stunden jemand vor dem Fernseher verbringt, desto höher sein Brottoeinkommen?
+- Die Hypothesen/ Eure Erwartungen sind nicht klar formuliert. Z.B: Media Impact (H1): The level of media engagement, including personal internet use and TV watching, significantly correlates with an individual's gross-pay in Germany. Erwartet ihr hier eine lineare positive bzw. negative Beziehung? Je mehr Stunden jemand vor dem Fernseher verbringt, desto höher sein Brottoeinkommen?
 
 - Mit welchen Kriterien wurden die Variblen ausgesucht? Bei der Korrelationsanalyse beschreibt ihr das hohe Korrelationen zwischen bestimmten Variablen fachlich erwartet worden sind. Warum habt ihr dann diese nicht von vornherein entfernt? 
 
-- Sind die statistisch identifizierten Außreiser auch fachliche Außreiser? Hier wurde unter anderem der IQR verwendet um Außreiser zu identifizieren. Für Grspaya wurde der lower bound auf -1675.0 berechnet. Macht es Sinn für grspaya diesen negativ zu setzen? Nach der Bereinigung ist min=1 (evtl. ein Außreiser?) Im Testdatensatz ist min um einiges höher.
+- Sind die statistisch identifizierten Außreiser auch fachliche Außreiser? Hier wurde unter anderem der IQR verwendet um Außreiser zu identifizieren. Für grspaya wurde der lower bound auf -1675.0 berechnet. Macht es Sinn für grspaya diesen negativ zu setzen? Nach der Bereinigung ist min=1 (evtl. ein Außreiser?). Im Testdatensatz ist min um einiges höher.
 
 ### Possible improvements
 
 - Provide constructive feedback on how the team might be able to improve their project.Make sure your feedback includes at least one comment on the modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.
+
 Logistische Regression:
 - Behandlung von Klassenungleichgewicht: Undersampling als alternative Methode
 - Fehleranalyse: In welchen Fällen liegt das Modell falsch? Um eventuell zu identifizieren welche Daten das Modell noch benötigt.
 
 Lineare Regression: 
-- Verteilung der unabhängige Variable untersuchen. Evtl. könnte eine Standardisierung der abhängigen Variable helfen die Beziehung zu den unabhängigen Variablen zu linearisieren
+- Verteilung der abhängigen Variable untersuchen. Evtl. könnte eine Standardisierung der abhängigen Variable helfen die Beziehung zu den unabhängigen Variablen zu linearisieren. (leider sind nicht alle Grafiken sichtbar evtl. liegt schon die Analyse vor)
 
 
-- Literature Review: Interessant wäre es auch eine Zusammenfassung über Methoden und verwendete Variablen andere Forscher und deren Ergebnisse.
-- Die aufgestellten Hypothesen sind noch nicht vollständig beantwortet
+- Literature Review: Interessant wäre es auch eine Zusammenfassung über Methoden und verwendete Variablen andere Forscher und deren Ergebnisse zu geben.
+
+- Die aufgestellten Hypothesen sind noch nicht vollständig beantwortet.
 
 ### Presentation
 
+- Warum wurden gerade Daten aus dem European Social Survey gewählt? 
 - Bei über 600 Variablen, wäre der Auswahlprozess der Variablen interessant. 
+- Interpretation der Ergebnisse im Hinblick auf die ursprünglichen Forschungsfragen.
+- Welche Empfehlungen würdet Ihr für politische Entscheidungsträger ableiten.
 
 ### Organization
 
-- Provide constructive feedback on any issues with file and/or code organization.
+- Das Notebook ist sehr gut strukturiert mit klar definierten Abschnitten.
+- Nachvollziehbarkeit und Transparenz ist gegeben.
+- Ausführlich dokumentiert
+- Sehr gute, gezielte Datanvisualisierungen (basierend auf den Code; Grafiken sind nicht sichtbar)
 
 ### Further comments
-
-- (Optional) Any further comments or feedback?
+Die Gruppe hat vielfältige und zielgerichtete Methoden und Analyseansätze angewendet. Danke, es hat wirklich Spaß gemacht!
