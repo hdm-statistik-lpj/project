@@ -36,9 +36,13 @@ Datenaufbereitung:
 
 - Die Hypothesen/ Eure Erwartungen sind nicht klar formuliert. Z.B: Media Impact (H1): The level of media engagement, including personal internet use and TV watching, significantly correlates with an individual's gross-pay in Germany. Erwartet ihr hier eine lineare positive bzw. negative Beziehung? Je mehr Stunden jemand vor dem Fernseher verbringt, desto höher sein Brottoeinkommen?
 
-- Mit welchen Kriterien wurden die Variblen ausgesucht? Bei der Korrelationsanalyse beschreibt ihr das hohe Korrelationen zwischen bestimmten Variablen fachlich erwartet worden sind. Warum habt ihr dann diese nicht von vornherein entfernt? 
+- Mit welchen Kriterien wurden die Variablen ausgesucht? Bei der Korrelationsanalyse beschreibt ihr das hohe Korrelationen zwischen bestimmten Variablen fachlich erwartet worden sind. Warum habt ihr dann diese nicht von vornherein entfernt? 
 
 - Sind die statistisch identifizierten Außreiser auch fachliche Außreiser? Hier wurde unter anderem der IQR verwendet um Außreiser zu identifizieren. Für grspaya wurde der lower bound auf -1675.0 berechnet. Macht es Sinn für grspaya diesen negativ zu setzen? Nach der Bereinigung ist min=1 (evtl. ein Außreiser?). Im Testdatensatz ist min um einiges höher.
+
+- Kategorisierung der unabhängigen Variable: Happiness-Score
+Da es insgesamt 11 (0 - 10) gültige Ausprägungen in dieser Variable gibt – also eine ungerade Anzahl –, wobei 0 extreme Unglücklichkeit repräsentiert, während 10 extreme Glücklichkeit bedeutet, stellt sich die Frage, welche Ausprägungen als "glücklich" und welche als "unglücklich" betrachtet werden sollen. Da es keine klare Grenze gibt, an der sowohl rechts als auch links eine gleiche Anzahl von Ausprägungen vorliegt, bedarf es einer klaren Definition, um Klarheit bei der Interpretation zu schaffen. 
+Konkret stellt sich die Frage, wie mit dem Wert 5 umgegangen werden soll. Soll er als "glücklich", "unglücklich" oder weder das eine noch das andere betrachtet werden? Falls die Antwort "weder glücklich noch unglücklich" also neutral, wie in DataDrafts behandelt wurde, könnte es sinnvoll sein, Datensätze mit dem Wert 5 auszufiltern, da sie nicht eindeutig der Gruppe "glücklich" oder "unglücklich" zugeordnet werden können.
 
 ### Possible improvements
 
