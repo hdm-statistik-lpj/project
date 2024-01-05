@@ -8,12 +8,12 @@ Ziel des Projektes ist es, herauszufinden wie soziale, politische und ökonomisc
 
 ### Data
 
-- Describe the data used or collected, if any. Is the data adequate for the project?
 Die Quelldaten dieses Projekts wurden aus dem European Social Survey (ESS)-Institut bezogen. Die Datensammlung wurde durch einen externen Dienstleister durchgeführt. Das Erhebungsverfahren und die Datenerfassung sind standardisiert. Jede Beobachtung representiert eine Person. In der Analyse werden nur Datensätze von Personen mit Wohnsitz in Deutschland berücksichtigt.  
 
 Die Datenbank enthält Beobachtungen zu über 50.000 Personen mit über 600 Variablen. Die Variablen enthalten Informationen zu soziale, politische und ökonomische Faktoren. Der Datensatz ist somit geeignet um die aufgestellten Hypothesen zu beantworten.
 
-Soweit mir bekannt ist durchlaufen die Daten des ESS eine Plausibilitäts- und eine Konsistenzprüfung. Zudem findet eine Gewichtung statt, um Repräsentativität der Bevölkerung sicherzustellen. Diese Korrekturen werden noch vor Veröffentlichung durchgeführt. (würde ich vollständigkeitshalber erwähnen; könnte aber Auswirkungen auf die anschließende Analyse/Datenbereinigung haben)
+Bekanntermaßen werden die Daten des European Social Survey (ESS) einer Plausibilitäts- und Konsistenzprüfung unterzogen. Darüber hinaus erfolgt eine Gewichtung, um die Repräsentativität der Bevölkerung sicherzustellen. Diese Korrekturen werden vor der Veröffentlichung durchgeführt. 
+(würde ich vollständigkeitshalber erwähnen; könnte aber Auswirkungen auf die anschließende Analyse/Datenbereinigung haben)
 
 
 ### Approach, tools and methods
@@ -23,43 +23,41 @@ Allgemein:
 Forschungsmethoden:
 - Anlehunung an bestehender Literatur zur Formulierung der Hypothesen
 - Statistische Analysemethoden: Regressionsanalyse mit dem Ziel das Bruttoeinkommen (grspaya) vorherzusagen; Klassifikationsanalyse mit dem Ziel Happiness-Score vorherzusagen
-- Lineare Regression (Vorwärtsauswahl): Zeigte eine schlechte Leistung mit hohem MSE, RMSE und niedrigem R²-Wert. Lasso Regression als Alternative angewand - half bei der Variablenselektion -, jedoch Leistungsmetriken vergleichbar mit lienaren Modell.
+- Lineare Regression (Vorwärtsauswahl): Zeigte eine schlechte Leistung mit hohem MSE, RMSE und niedrigem R²-Wert. Lasso Regression als Alternative angewand - half bei der Variablenselektion -, jedoch Leistungsmetriken vergleichbar mit lienaren Modell
 - Logistische Regression: Schwellenwertanpassung zur Optimierung des Gleichgewichts zwischen Präzision und Recall; Oversampling im Umgang mit ungleichgewichtigem Datensatz, um Verbesserung der Modelleistung zu erzielen
 
 Datenaufbereitung: 
-- Auswahl relevanter Variablen: Verwendung des VIF zur Identifizierung von Multikollinearität. Auswahl von Variablen mit weniger Multikollinearität. Auswahl der Variablen auf der EDA.
+- Auswahl relevanter Variablen: Verwendung des VIF zur Identifizierung von Multikollinearität. Auswahl von Variablen mit weniger Multikollinearität. Auswahl der Variablen auf der EDA
 - Datenfilterung (Personen mit Wohnsitz in Deutschland)
-- Umgang mit fehlenden Werten: Entfernung von Variablen mit hohem Anteil fehlender Werte, verbleibende Variablen mit fehlenden Werte werden mit dem Median (für ordinale Variablen) oder Modus (für nominale Variablen) ersetzt.
-- Erkennung und Entfernung von Ausreißern mittels IQR und Z-Score Methoden.
+- Umgang mit fehlenden Werten: Entfernung von Variablen mit hohem Anteil fehlender Werte, verbleibende Variablen mit fehlenden Werte werden mit dem Median (für ordinale Variablen) oder Modus (für nominale Variablen) ersetzt
+- Erkennung und Entfernung von Ausreißern mittels IQR und Z-Score Methoden
 
 ### Lack of clarity
 
-- Die Hypothesen/ Eure Erwartungen sind nicht klar formuliert. Z.B: Media Impact (H1): The level of media engagement, including personal internet use and TV watching, significantly correlates with an individual's gross-pay in Germany. Erwartet ihr hier eine lineare positive bzw. negative Beziehung? Je mehr Stunden jemand vor dem Fernseher verbringt, desto höher sein Brottoeinkommen?
+- Die Hypothesen/ Erwartungen sind nicht klar formuliert. Z.B: Media Impact (H1): The level of media engagement, including personal internet use and TV watching, significantly correlates with an individual's gross-pay in Germany. Erwartet ihr hier eine lineare positive bzw. negative Beziehung? Je mehr Stunden jemand vor dem Fernseher verbringt, desto höher sein Brottoeinkommen?
 
 - Mit welchen Kriterien wurden die Variablen ausgesucht? Bei der Korrelationsanalyse beschreibt ihr das hohe Korrelationen zwischen bestimmten Variablen fachlich erwartet worden sind. Warum habt ihr dann diese nicht von vornherein entfernt? 
 
 - Sind die statistisch identifizierten Außreiser auch fachliche Außreiser? Hier wurde unter anderem der IQR verwendet um Außreiser zu identifizieren. Für grspaya wurde der lower bound auf -1675.0 berechnet. Macht es Sinn für grspaya diesen negativ zu setzen? Nach der Bereinigung ist min=1 (evtl. ein Außreiser?). Im Testdatensatz ist min um einiges höher.
 
 - Kategorisierung der unabhängigen Variable: Happiness-Score
-Da es insgesamt 11 (0 - 10) gültige Ausprägungen in dieser Variable gibt – also eine ungerade Anzahl –, wobei 0 extreme Unglücklichkeit repräsentiert, während 10 extreme Glücklichkeit bedeutet, stellt sich die Frage, welche Ausprägungen als "glücklich" und welche als "unglücklich" betrachtet werden sollen. Da es keine klare Grenze gibt, an der sowohl rechts als auch links eine gleiche Anzahl von Ausprägungen vorliegt, bedarf es einer klaren Definition, um Klarheit bei der Interpretation zu schaffen. 
-Konkret stellt sich die Frage, wie mit dem Wert 5 umgegangen werden soll. Soll er als "glücklich", "unglücklich" oder weder das eine noch das andere betrachtet werden? Falls die Antwort "weder glücklich noch unglücklich" also neutral, wie in DataDrafts behandelt wurde, könnte es sinnvoll sein, Datensätze mit dem Wert 5 auszufiltern, da sie nicht eindeutig der Gruppe "glücklich" oder "unglücklich" zugeordnet werden können.
+Aufgrund der insgesamt 11 (0 - 10) gültigen Ausprägungen in dieser Variable, die eine ungerade Anzahl darstellen, stellt sich die Frage, welche Werte als "glücklich" und welche als "unglücklich" betrachtet werden sollten. Bei einer Skala von 0 (extreme Unglücklichkeit) bis 10 (extreme Glücklichkeit) gibt es keine eindeutige Grenze, bei der auf beiden Seiten eine gleiche Anzahl von Ausprägungen vorliegt. Daher ist eine klare Definition erforderlich, um Klarheit bei der Interpretation zu schaffen.
+Konkret stellt sich die Frage, wie mit dem Wert 5 umgegangen werden soll. Soll er als "glücklich", "unglücklich" oder weder das eine noch das andere betrachtet werden? Wenn die Antwort darauf "weder glücklich noch unglücklich" ist, wie es in DataDrafts behandelt wurde, könnte es sinnvoll sein, Datensätze mit dem Wert 5 auszufiltern. Dies liegt daran, dass sie nicht eindeutig der Gruppe "glücklich" oder "unglücklich" zugeordnet werden können.
 
 ### Possible improvements
 
-- Provide constructive feedback on how the team might be able to improve their project.Make sure your feedback includes at least one comment on the modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.
-
 Logistische Regression:
 - Behandlung von Klassenungleichgewicht: Undersampling als alternative Methode
-- Fehleranalyse: In welchen Fällen liegt das Modell falsch? Um eventuell zu identifizieren welche Daten das Modell noch benötigt.
+- Fehleranalyse: In welchen Fällen liegt das Modell falsch? Dies könnte helfen zu identifizieren, welche Daten möglicherweise noch benötigt werden
 
 Lineare Regression: 
 - Verteilung der abhängigen Variable untersuchen. Evtl. könnte eine Standardisierung der abhängigen Variable helfen die Beziehung zu den unabhängigen Variablen zu linearisieren. (leider sind nicht alle Grafiken sichtbar evtl. liegt schon die Analyse vor)
 
 - Welche Auswirkungen hatten die ausgewählten Methoden im Umgang mit fehlenden Werten auf die Assumptions der Modelle. Ist der Datensatz durch diese Bearbeitungsschritte immer noch representativ?
 
-- Literature Review: Interessant wäre es auch eine Zusammenfassung über Methoden und verwendete Variablen anderer Forscher und deren Ergebnisse aufzuzeigen.
+- Literature Review: Interessant wäre es auch eine Zusammenfassung über Methoden und verwendete Variablen anderer Forscher und deren Ergebnisse aufzuzeigen
 
-- Die aufgestellten Hypothesen sind noch nicht vollständig beantwortet.
+- Die aufgestellten Hypothesen sind noch nicht vollständig beantwortet
 
 ### Presentation
 
@@ -71,8 +69,8 @@ Lineare Regression:
 
 ### Organization
 
-- Das Notebook ist sehr gut strukturiert mit klar definierten Abschnitten.
-- Nachvollziehbarkeit und Transparenz ist gegeben.
+- Das Notebook ist sehr gut strukturiert mit klar definierten Abschnitten
+- Nachvollziehbarkeit und Transparenz ist gegeben
 - Ausführlich dokumentiert
 - Sehr gute, gezielte Datanvisualisierungen (basierend auf den Code; Grafiken sind nicht sichtbar)
 
