@@ -4,7 +4,7 @@ Dep. Variable:       energyEfficiency   No. Observations:                  490
 Model:                          Logit   Df Residuals:                      487
 Method:                           MLE   Df Model:                            2
 Date:                Mon, 08 Jan 2024   Pseudo R-squ.:                  0.3399
-Time:                        18:02:57   Log-Likelihood:                -182.96
+Time:                        19:09:58   Log-Likelihood:                -182.96
 converged:                       True   LL-Null:                       -277.18
 Covariance Type:            nonrobust   LLR p-value:                 1.202e-41
 ==============================================================================
